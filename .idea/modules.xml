@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bootcloud/bootcloud.iml" filepath="$PROJECT_DIR$/bootcloud/bootcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/integration.iml" filepath="$PROJECT_DIR$/integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/soap-java-service/soap-java-service.iml" filepath="$PROJECT_DIR$/soap-java-service/soap-java-service.iml" />
     </modules>
   </component>
 </project>
