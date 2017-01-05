@@ -22,11 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="integration" />
+        <module name="soap-java-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="integration" target="1.5" />
+      <module name="soap-java-service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
