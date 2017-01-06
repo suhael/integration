@@ -22,13 +22,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="bootcloud" />
-        <module name="integration" />
+        <module name="service" />
+        <module name="soap-api" />
+        <module name="soap-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bootcloud" target="1.8" />
       <module name="integration" target="1.5" />
+      <module name="service" target="1.8" />
+      <module name="soap-api" target="1.5" />
+      <module name="soap-client" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
