@@ -1,7 +1,19 @@
 package com.suhael.integration.producer.models;
 
+import java.util.Objects;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ADDRESS")
 public class Address {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
     private String building;
     private String street;
@@ -55,5 +67,24 @@ public class Address {
 
     public void setPostcode(String postcode) {
         this.postcode = postcode;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Address address = (Address) o;
+        return id == address.id &&
+                Objects.equals(building, address.building) &&
+                Objects.equals(street, address.street) &&
+                Objects.equals(town, address.town) &&
+                Objects.equals(county, address.county) &&
+                Objects.equals(postcode, address.postcode);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(id, building, street, town, county, postcode);
     }
 }

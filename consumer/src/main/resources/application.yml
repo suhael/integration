@@ -14,9 +14,3 @@ spring:
     jpa:
       hibernate:
         ddl-auto: none
-
-#spring:
-#  h2:
-#    console:
-#      enabled: true
-#      path: /h2-console
