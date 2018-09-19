@@ -1,0 +1,22 @@
+server:
+  servlet.contextPath: /consumer
+  port: 9010
+
+spring:
+    datasource:
+      url: jdbc:hsqldb:mem:consumer;sql.syntax_ora=true
+      platform: hsql
+      username: sa
+      password:
+      type: org.hsqldb.jdbc.JDBCDataSource
+      schema: classpath:db/hsql/schema.sql
+#      data: classpath:db/test-data/*.sql
+    jpa:
+      hibernate:
+        ddl-auto: none
+
+#spring:
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
